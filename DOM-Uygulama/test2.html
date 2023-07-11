@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  <label for="input">Input:</label><br>
+  <input type="text" id="input"><br>
+  <button id="botton" type="button">Submit</button>
+</form> 
+
+<script>
+    var btn = document.getElementById("botton");
+
+btn.onclick=function() {
+  var x = document.getElementById("input").value;
+  console.log(x);
+}
+</script>
+
+</body>
+</html>

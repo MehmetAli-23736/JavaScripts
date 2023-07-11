@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Uygulaması</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body>
+
+    <h1 id="Baslik">DOM Uygulaması</h1>
+
+    <form id="Form">
+        <div id="Anadiv">
+            <div id="ustdiv">
+               <input type="text" style="background-color: antiquewhite;" id="input-text">
+               <button style="width: 40px; background-color: green; color: white;" id="botton" type="button">Tıkla</button>
+            </div>
+            
+            <div id="altdiv">
+               <h1>Ürün Çıktısı:</h1>
+               
+            </div>
+
+        <ul>
+            <li id="sunum"></li>
+        </ul>
+
+    </div>
+
+
+
+ <script>
+let btn = document.getElementById("botton");
+
+
+btn.onclick = function(){
+
+   var text = document.getElementById("input-text").value;
+    console.log(text);
+   document.getElementById("sunum").innerHTML = text;
+   document.getElementById("input-text").innerHTML = "Alındı";
+
+
+}
+
+
+
+
+
+     </script>
+       
+
+
+
+    </form>
+</body>
+</html>

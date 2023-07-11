@@ -1,0 +1,36 @@
+body {
+    background-color: aquamarine;
+}
+
+#Baslik {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+#Anadiv {
+    background-color: antiquewhite;
+    height: 500px;
+    width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+#ustdiv {
+    display: flex;
+    justify-content: center ;
+    height: 30px;
+    
+}
+#altdiv {
+    display: flex;
+    justify-content: center ;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}

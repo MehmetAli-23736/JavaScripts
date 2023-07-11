@@ -1,0 +1,47 @@
+body {
+    background: #44e9ef;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.Divgrs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.cikis {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.islemler {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.islemBtn {
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+
+}
+.islemBtns {
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="a/sayfa.css">
+
+</head>
+<body>
+
+    <h1>4 İşlem Hesaplama</h1>
+    
+
+
+    <div class="dvic">
+    <div class="Divgrs">
+        <input type="number" id="Number1" style="margin-right: 10px; border-radius: 20px;">
+        <input type="number" id="Number2" style="border-radius: 20px;">
+    </div>
+
+    <div class="islemler">
+        <button class="islemBtn" id="topla">+</button>
+        <button class="islemBtn" id="cikart">-</button>
+        <button class="islemBtn" id="carp">x</button>
+        <button class="islemBtns" id="bol">/</button>
+    </div>
+
+</div>
+
+<div class="cikis">
+    <h3 id="toplamlar"></h3>
+</div>
+    <script>
+        let toplamaislemi = document.getElementById("topla");
+let cikartmaislemi = document.getElementById("cikart");
+let carpmaislemi = document.getElementById("carp");
+let bolmeislemi = document.getElementById("bol");
+
+//TOPLAMA
+
+    toplamaislemi.onclick=function(){
+
+    let Numberinput1 = parseFloat(document.getElementById("Number1").value);  
+    let Numberinput2 = parseFloat(document.getElementById("Number2").value);  
+    console.log(Numberinput1);
+    console.log(Numberinput2);
+    let NumberToplam = Numberinput1 + Numberinput2;
+    console.log(NumberToplam);
+
+    let Toplam = document.getElementById("toplamlar").innerHTML = NumberToplam;
+    }
+
+    //ÇIKARTMA
+    cikartmaislemi.onclick=function(){
+
+        let Numberinput1 = parseFloat(document.getElementById("Number1").value);  
+        let Numberinput2 = parseFloat(document.getElementById("Number2").value);  
+        console.log(Numberinput1);
+        console.log(Numberinput2);
+        let NumberToplam = Numberinput1 - Numberinput2;
+        console.log(NumberToplam);
+    
+        let Toplam = document.getElementById("toplamlar").innerHTML = NumberToplam;
+        }
+
+        //ÇARPMA
+
+         carpmaislemi.onclick=function(){
+
+    let Numberinput1 = parseFloat(document.getElementById("Number1").value);  
+    let Numberinput2 = parseFloat(document.getElementById("Number2").value);  
+    console.log(Numberinput1);
+    console.log(Numberinput2);
+    let NumberToplam = Numberinput1 * Numberinput2;
+    console.log(NumberToplam);
+
+    let Toplam = document.getElementById("toplamlar").innerHTML = NumberToplam;
+    }
+
+//BÖLME
+
+    bolmeislemi.onclick=function(){
+
+        let Numberinput1 = parseFloat(document.getElementById("Number1").value);  
+        let Numberinput2 = parseFloat(document.getElementById("Number2").value);  
+        console.log(Numberinput1);
+        console.log(Numberinput2);
+        let NumberToplam = Numberinput1 / Numberinput2;
+        console.log(NumberToplam);
+    
+        let Toplam = document.getElementById("toplamlar").innerHTML = NumberToplam;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

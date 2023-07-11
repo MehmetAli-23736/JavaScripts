@@ -1,0 +1,14 @@
+<!-- Javascript'te bir metin kutusundan veri alma -->
+<input type="text" id="txtAd" value="Ahmet">
+<button id="uyari">Selamla</button>
+<script>
+    //buton ile div içinde yazdıralım.
+    
+    var btn=document.getElementById("uyari");
+    btn.onclick=function(){
+        
+        var ad=document.getElementById("txtAd");
+        console.log("Hoşgeldin: "+ad.value);
+        
+    }		
+</script>
